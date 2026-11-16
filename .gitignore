@@ -1,0 +1,15 @@
+# 本地隧道路径（cloudflared 二进制 55MB，不入库；自行到 cloudflare 官方下载放 tools/）
+tools/
+cloudflared.exe
+tunnel.pid
+tunnel.log
+tunnel.log.out
+
+# 运行日志与临时地址
+server.err.log
+server.out.log
+当前地址.txt
+
+node_modules/
+.DS_Store
+Thumbs.db

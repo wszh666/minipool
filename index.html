@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>🎱 极简台球 Minipool</title>
+<link rel="icon" href="pool.ico">
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh;
+    display: flex; align-items: center; justify-content: center;
+    padding: 24px;
+    font-family: -apple-system, "Segoe UI", "Microsoft YaHei", system-ui, sans-serif;
+    background: radial-gradient(circle at 50% 0%, #14332a 0%, #0b1512 55%, #060a09 100%);
+    color: #e8f2ee;
+  }
+  .card {
+    width: 100%; max-width: 520px;
+    background: rgba(255,255,255,.045);
+    border: 1px solid rgba(255,255,255,.09);
+    border-radius: 20px;
+    padding: 32px 28px;
+    box-shadow: 0 24px 60px rgba(0,0,0,.5);
+    backdrop-filter: blur(10px);
+  }
+  h1 { margin: 0 0 6px; font-size: 30px; letter-spacing: .5px; }
+  .sub { margin: 0 0 26px; color: #8fa8a0; font-size: 14px; line-height: 1.6; }
+  a.play {
+    display: block; text-align: center; text-decoration: none;
+    padding: 16px; border-radius: 14px; font-size: 18px; font-weight: 600;
+    color: #06120e;
+    background: linear-gradient(180deg, #7ee2b8, #3fbf8e);
+    box-shadow: 0 10px 24px rgba(63,191,142,.28);
+    transition: transform .12s ease, box-shadow .12s ease;
+  }
+  a.play:hover { transform: translateY(-2px); box-shadow: 0 14px 30px rgba(63,191,142,.4); }
+  ul { margin: 22px 0 0; padding: 0; list-style: none; }
+  li {
+    display: flex; gap: 10px;
+    padding: 12px 0; font-size: 14px; line-height: 1.65; color: #b6c9c2;
+    border-top: 1px solid rgba(255,255,255,.07);
+  }
+  li b { color: #e8f2ee; font-weight: 600; flex: 0 0 auto; }
+  .tag {
+    display: inline-block; margin-top: 20px; padding: 5px 11px; border-radius: 99px;
+    font-size: 12px; color: #8fa8a0; background: rgba(255,255,255,.06);
+  }
+  code { color: #7ee2b8; font-size: 13px; }
+</style>
+</head>
+<body>
+<div class="card">
+  <h1>🎱 极简台球</h1>
+  <p class="sub">中式八球 · 单文件网页版 · 手机电脑都能玩<br>点下面按钮直接开打，不需要安装任何东西。</p>
+
+  <a class="play" href="pool.html">开始游戏 →</a>
+
+  <ul>
+    <li><b>单机</b><span>上面按钮直接玩，断网也行。</span></li>
+    <li><b>联机</b><span>需要一个 Node 服务器：<code>node pool-server.js</code>，一方建房拿 4 位房号，另一方加入。<a href="https://github.com/wszh666/minipool#-异地联机给朋友玩" style="color:#7ee2b8">部署说明</a></span></li>
+    <li><b>规则</b><span>开球 → 定花色 → 清台 → 打进 8 号获胜；犯规给对手自由球。</span></li>
+  </ul>
+
+  <span class="tag">MIT License · 零依赖服务器</span>
+</div>
+</body>
+</html>

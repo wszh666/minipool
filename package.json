@@ -1,0 +1,26 @@
+{
+  "name": "minipool",
+  "version": "1.0.0",
+  "private": true,
+  "description": "极简台球 · 中式八球：单文件 HTML + 零依赖 Node 联机服务器",
+  "main": "pool-server.js",
+  "scripts": {
+    "start": "node pool-server.js",
+    "online": "node pool-server.js",
+    "test": "node tests/e2e-online.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "pool",
+    "billiards",
+    "billiard",
+    "chinese-eight-ball",
+    "8-ball",
+    "websocket",
+    "game",
+    "零依赖"
+  ],
+  "license": "MIT"
+}

@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: minipool
+    runtime: node
+    plan: free
+    buildCommand: npm install --omit=dev
+    startCommand: node pool-server.js
+    envVars:
+      # 云端不要开省电模式，否则免费实例睡着就再也叫不醒自己的隧道
+      - key: POOL_IDLE_MINUTES
+        value: "0"
